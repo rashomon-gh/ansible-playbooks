@@ -28,10 +28,10 @@
     # Note: onefetch is not available in standard Ubuntu repos
     # Install via cargo: cargo install onefetch
     - name: Install onefetch via cargo (if rust is installed)
-      shell:
-        cmd: cargo install onefetch
+      shell: cargo install onefetch
+      args:
         creates: /usr/local/cargo/bin/onefetch
-      ignore_errors: yes
+      ignore_errors: true
       # Silently fail if rust/cargo is not installed yet
 
     - name: Install wget
