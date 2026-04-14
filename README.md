@@ -4,14 +4,7 @@ This repository contains ansible playbooks for various automation tasks, e.g. po
 
 ## Usage
 
-First install ansible via pip
-
-```bash
-sudo dnf install python3-pip python3-libdnf5 -y
-pip install ansible
-````
-
-Then run the playbooks.
+First install ansible via pip and then run the playbooks.
 
 > [!IMPORTANT]
 > Currently the `target_user` variable inside the playbooks is hardcoded, 
